@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#0800FF</color>
+    <color name="red">#B30202</color>
+    <!-- Blue Colors -->
+    <color name="primaryBlue">#2196F3</color>
+    <color name="darkBlue">#1565C0</color>
+
+    <!-- Black Colors -->
+    <color name="primaryBlack">#000000</color>
+    <color name="darkBlack">#222222</color>
+
+    <!-- Red Colors -->
+    <color name="primaryRed">#FF0000</color>
+    <color name="darkRed">#B71C1C</color>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.DetailsActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="test"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/movie_img"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:scaleType="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:src="@drawable/img" />
+
+    <!-- Language -->
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="Language"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/movie_img"
+        app:layout_constraintTop_toBottomOf="@+id/movie_img" />
+
+    <TextView
+        android:id="@+id/tv_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="en"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_1sdp"
+        android:textColor="@color/primaryRed"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@+id/language"
+        app:layout_constraintStart_toStartOf="@+id/language"
+        app:layout_constraintTop_toBottomOf="@+id/language" />
+    <!--  vote count  -->
+    <TextView
+        android:id="@+id/vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:text="vote count"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toStartOf="@id/vote"
+        app:layout_constraintStart_toEndOf="@id/language"
+        app:layout_constraintTop_toBottomOf="@+id/movie_img" />
+
+    <TextView
+        android:layout_margin="@dimen/_1sdp"
+        android:id="@+id/tv_vote_count"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryRed"
+        app:layout_constraintEnd_toEndOf="@id/vote_count"
+        app:layout_constraintStart_toStartOf="@id/vote_count"
+        app:layout_constraintTop_toBottomOf="@id/vote_count"
+        android:textSize="@dimen/_14ssp"
+
+        tools:text="443" />
+
+    <!-- vote -->
+    <TextView
+        android:id="@+id/vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:text="vote"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/movie_img"
+        app:layout_constraintTop_toBottomOf="@+id/movie_img" />
+
+    <TextView
+        android:id="@+id/tv_vote"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryRed"
+        app:layout_constraintEnd_toEndOf="@id/vote"
+        app:layout_constraintStart_toStartOf="@id/vote"
+        app:layout_constraintTop_toBottomOf="@id/vote"
+        android:layout_margin="@dimen/_1sdp"
+        android:textSize="@dimen/_14ssp"
+        tools:text="7.5" />
+
+    <!-- overview -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/over_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="overview:"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="8"
+        android:textColor="@color/primaryRed"
+        android:textSize="@dimen/_17ssp"
+        android:textColorHighlight="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/over_view"
+        app:layout_constraintTop_toBottomOf="@+id/over_view"
+        tools:text="Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
